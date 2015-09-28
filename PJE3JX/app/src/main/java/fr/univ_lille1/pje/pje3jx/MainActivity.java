@@ -1,5 +1,6 @@
 package fr.univ_lille1.pje.pje3jx;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -28,9 +29,14 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_add) {
+            Intent intent = new Intent(this, AddBookActivity.class);
+            startActivity(intent);
+        }
+
+        if (id == R.id.action_list) {
+            Intent intent = new Intent(this, ListBooksActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

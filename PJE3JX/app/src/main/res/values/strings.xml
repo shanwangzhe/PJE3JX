@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">PJE3JX</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="hello_world">En construction…</string>
+
+    <string name="title_activity_add_book">Ajouter un livre</string>
+    <string name="title_activity_list_books">Liste des livres</string>
+
+    <string name="action_add">Ajouter</string>
+    <string name="action_list">Liste des Livres</string>
 </resources>

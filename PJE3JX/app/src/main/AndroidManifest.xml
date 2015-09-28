@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AddBookActivity"
+            android:label="@string/title_activity_add_book"
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".ListBooksActivity"
+            android:label="@string/title_activity_list_books"
+            android:parentActivityName=".MainActivity" >
+        </activity>
     </application>
 
 </manifest>
