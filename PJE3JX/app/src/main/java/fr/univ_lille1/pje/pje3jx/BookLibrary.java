@@ -1,41 +1,46 @@
 package fr.univ_lille1.pje.pje3jx;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class BookLibrary {
 
-    private ArrayList<Book> list;
+    private List<Book> list;
 
     public BookLibrary() {
+        list = new ArrayList<Book>();
         list.add(
                 new Book(
                         "Tintin en Chine",
                         "Hergé",
-                        "tintin.png"
+                        "tintin.png",
+                        "BD humour"
                 )
         );
         list.add(
                 new Book(
                         "Cuisiner la morue",
                         "Manuel Delaveiro",
-                        "morue.png"
+                        "morue.png",
+                        "Cuisine"
                 )
         );
         list.add(
                 new Book(
                         "Android pour les nuls",
                         "Mark Truite",
-                        "android.png"
+                        "android.png",
+                        "Technologie"
                 )
         );
     }
 
-    public ArrayList<Book> getBooks() {
+    public List<Book> getBooks() {
         return list;
     }
 
-    public Book createBook(String name, String author, String image) {
-        return new Book(name, author, image);
+    public Book createBook(String name, String author, String image, String genre) {
+        return new Book(name, author, image, genre);
     }
 
     public void addBook(Book b) {
