@@ -8,5 +8,12 @@
     <string name = "name">NAME</string>
 
     <string name="action_add">Ajouter</string>
-    <string name="action_list">Liste des Livres</string>
+    <string name="action_list">Liste des livres</string>
+
+    <string name="book_title">Titre</string>
+    <string name="book_author">Auteur</string>
+    <string name="book_image">Image</string>
+    <string name="book_genre">Genre</string>
+
+
 </resources>

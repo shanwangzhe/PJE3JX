@@ -1,19 +1,44 @@
 package fr.univ_lille1.pje.pje3jx;
 
+import android.graphics.Color;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class BookLibrary {
 
-    private List<Book> list;
+    private static List<Book> list = new ArrayList<Book>();
 
-    public BookLibrary() {
-        list = new ArrayList<Book>();
+    public static List<Book> getBooks() {
+        if(list.isEmpty())
+            fillWithExamples();
+        return list;
+    }
+
+    public static void addBook(Book b) {
+        if(list.isEmpty())
+            fillWithExamples();
+        list.add(b);
+    }
+
+    public static void deleteBook(Book b) {
+        if(list.isEmpty())
+            fillWithExamples();
+        list.remove(b);
+    }
+
+    public static void deleteBook(int position) {
+        if(list.isEmpty())
+            fillWithExamples();
+        list.remove(list.get(position));
+    }
+
+    public static void fillWithExamples() {
         list.add(
                 new Book(
                         "Tintin en Chine",
                         "Hergé",
-                        "tintin.png",
+                        Color.RED,
                         "BD humour"
                 )
         );
@@ -21,7 +46,7 @@ public class BookLibrary {
                 new Book(
                         "Cuisiner la morue",
                         "Manuel Delaveiro",
-                        "morue.png",
+                        Color.BLUE,
                         "Cuisine"
                 )
         );
@@ -29,25 +54,9 @@ public class BookLibrary {
                 new Book(
                         "Android pour les nuls",
                         "Mark Truite",
-                        "android.png",
+                        Color.GREEN,
                         "Technologie"
                 )
         );
-    }
-
-    public List<Book> getBooks() {
-        return list;
-    }
-
-    public Book createBook(String name, String author, String image, String genre) {
-        return new Book(name, author, image, genre);
-    }
-
-    public void addBook(Book b) {
-        list.add(b);
-    }
-
-    public void deleteBook(Book b) {
-        list.remove(b);
     }
 }
