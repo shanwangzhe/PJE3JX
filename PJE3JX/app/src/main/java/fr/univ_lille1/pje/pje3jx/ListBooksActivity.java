@@ -17,11 +17,9 @@ public class ListBooksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_books);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        lib = new BookLibrary().getBooks();
-
         mListView = (ListView) findViewById(R.id.listView);
 
-        BookAdapter adapter = new BookAdapter(ListBooksActivity.this, lib);
+        BookAdapter adapter = new BookAdapter(ListBooksActivity.this, BookLibrary.getBooks());
         mListView.setAdapter(adapter);
     }
 
