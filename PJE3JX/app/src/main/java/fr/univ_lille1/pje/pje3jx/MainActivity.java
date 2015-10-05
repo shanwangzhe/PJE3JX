@@ -63,8 +63,6 @@ public class MainActivity extends ActionBarActivity {
 
             Intent intent =new Intent();
 
-            //intent.putExtra("textIntent", "123");
-
             intent.setClass(MainActivity.this, ListBooksActivity.class);
             MainActivity.this.startActivity(intent);
 
