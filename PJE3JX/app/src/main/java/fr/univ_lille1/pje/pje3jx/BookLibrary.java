@@ -27,6 +27,12 @@ public class BookLibrary {
         list.remove(b);
     }
 
+    public static void deleteBook(int position) {
+        if(list.isEmpty())
+            fillWithExamples();
+        list.remove(list.get(position));
+    }
+
     public static void fillWithExamples() {
         list.add(
                 new Book(
