@@ -39,7 +39,7 @@ public class BookAdapter extends ArrayAdapter<Book> {
 
         viewHolder.title.setText(book.getName());
         viewHolder.author.setText(book.getAuthor());
-        viewHolder.avatar.setImageDrawable(new ColorDrawable(Color.GRAY));
+        viewHolder.avatar.setImageDrawable(new ColorDrawable(book.getImage()));
         viewHolder.genre.setText(book.getGenre());
 
         return convertView;

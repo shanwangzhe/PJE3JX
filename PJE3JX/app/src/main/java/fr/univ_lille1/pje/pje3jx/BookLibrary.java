@@ -1,5 +1,7 @@
 package fr.univ_lille1.pje.pje3jx;
 
+import android.graphics.Color;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +32,7 @@ public class BookLibrary {
                 new Book(
                         "Tintin en Chine",
                         "Hergé",
-                        "tintin.png",
+                        Color.RED,
                         "BD humour"
                 )
         );
@@ -38,7 +40,7 @@ public class BookLibrary {
                 new Book(
                         "Cuisiner la morue",
                         "Manuel Delaveiro",
-                        "morue.png",
+                        Color.BLUE,
                         "Cuisine"
                 )
         );
@@ -46,7 +48,7 @@ public class BookLibrary {
                 new Book(
                         "Android pour les nuls",
                         "Mark Truite",
-                        "android.png",
+                        Color.GREEN,
                         "Technologie"
                 )
         );

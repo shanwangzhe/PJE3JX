@@ -1,13 +1,15 @@
 package fr.univ_lille1.pje.pje3jx;
 
+import android.graphics.Color;
+
 public class Book {
 
     private String name;
     private String author;
-    private String image;
+    private int image;
     private String genre;
 
-    public Book(String name, String author, String image, String genre) {
+    public Book(String name, String author, int image, String genre) {
         this.name = name;
         this.author = author;
         this.image = image;
@@ -30,11 +32,11 @@ public class Book {
         this.author = author;
     }
 
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(int image) {
         this.image = image;
     }
 
