@@ -27,15 +27,5 @@ public class BookFilterCatalog extends BookFilter{
         return list;
     }
 
-    public Book createBook(String name, String author, String image, String genre) {
-        return new Book(name, author, image, genre);
-    }
 
-    public void addBook(Book b) {
-        list.add(b);
-    }
-
-    public void deleteBook(Book b) {
-        list.remove(b);
-    }
 }
